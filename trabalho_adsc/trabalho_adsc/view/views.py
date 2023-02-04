@@ -152,7 +152,7 @@ def dashboard(request):
             family="Arial",
             size=12,
             color="black"
-        )
+        ) 
     )
 
 
