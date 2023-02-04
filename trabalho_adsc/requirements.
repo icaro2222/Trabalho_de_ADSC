@@ -1,0 +1,6 @@
+asgiref==3.6.0
+Django==3.2.8
+plotly==5.13.0
+pytz==2022.7.1
+sqlparse==0.4.3
+tenacity==8.1.0
