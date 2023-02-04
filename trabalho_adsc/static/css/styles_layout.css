@@ -1,0 +1,47 @@
+*{
+    padding: 0%;
+}
+
+.navbar {
+    background: linear-gradient(90.03deg, rgba(0, 163, 255, 0.63) -35.28%, #D6DAFF);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.sidebar {
+    background: linear-gradient(0.59deg, #64C9FF 0.51%, rgba(71, 236, 255, 0.21) 97.67%);
+    border-radius: 10px;
+}
+
+.table-overflow{
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#wrapper #content-wrapper {
+    background-color: #E7F5F5;
+}
+
+#linktelalimpa{
+    margin: 5px;
+}
+
+#tituloRelatGeral{
+    border-radius: 10px;
+}
+
+/*Botão de criar a primeira carteira na Tela Inicial*/
+.botaocriarPcarteira{
+    background-color: rgb(163, 163, 163);
+    box-shadow: 15px 15px 9px gray;
+}
+
+/*Cor do campo dos imputs na criação de carteira*/
+.inputCriarCarteira{
+    background-color: rgba(37, 37, 37, 0.08);
+}
+
+/*TExto para criar a primeira carteira na Tela Inicial*/
+#textBotaoPrimCart{
+    font-size: large;
+}
