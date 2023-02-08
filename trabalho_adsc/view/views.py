@@ -21,7 +21,7 @@ def dashboard(request):
     trace1 = go.Bar(x = ['1000', '10000', '100000'],
                     y = [0.0887, 0.544, 1.0865],
                     name = 'Windows 11',
-                    marker = {'color': '#b6bccf'},
+                    marker = {'color': '#68adfc'},
                     text=[0.0887, 0.544, 1.0865],
                     textposition='auto',
                     width=0.3,
@@ -30,7 +30,7 @@ def dashboard(request):
     trace2 = go.Bar(x = ['1000', '10000', '100000'],
                     y = [0.0661, 0.253, 2.1656],
                     name = 'Ubuntu 22',
-                    marker = {'color': '#68adfc'},
+                    marker = {'color': '#b6bccf'},
                     text=[0.0661, 0.253, 2.1656],
                     textposition='auto',
                     width=0.3,
@@ -68,7 +68,7 @@ def dashboard(request):
     trace1 = go.Bar(x = ['1000', '10000', '100000'],
                     y = [0.079, 0.0867, 0.1554],
                     name = 'Windows 11',
-                    marker = {'color': '#b6bccf'},
+                    marker = {'color': '#68adfc'},
                     text=[0.079, 0.0867, 0.1554],
                     textposition='auto',
                     width=0.3,
@@ -77,7 +77,7 @@ def dashboard(request):
     trace2 = go.Bar(x = ['1000', '10000', '100000'],
                     y = [0.0584, 0.0702, 0.3249],
                     name = 'Ubuntu 22',
-                    marker = {'color': '#68adfc'},
+                    marker = {'color': '#b6bccf'},
                     text= [0.0584, 0.0702, 0.3249],
                     textposition='auto',
                     width=0.3,
@@ -94,7 +94,7 @@ def dashboard(request):
         )
 
     figura.update_layout(
-        title_text='Gráfico de Inserts no PostgresSQL',
+        title_text='Gráfico de Update no PostgresSQL',
         height=500,
         xaxis_title="Valor da Carga",
         yaxis_title="Tempo em milissegundos",
@@ -116,7 +116,7 @@ def dashboard(request):
     trace1 = go.Bar(x = ['1000', '10000', '100000'],
                     y = [0.1127, 0.0963, 0.1087],
                     name = 'Windows 11',
-                    marker = {'color': '#b6bccf'},
+                    marker = {'color': '#68adfc'},
                     text= [0.1127, 0.0963, 0.1087],
                     textposition='auto',
                     width=0.3,
@@ -125,7 +125,7 @@ def dashboard(request):
     trace2 = go.Bar(x = ['1000', '10000', '100000'],
                     y = [0.0692, 0.0764, 0.0933],
                     name = 'Ubuntu 22',
-                    marker = {'color': '#68adfc'},
+                    marker = {'color': '#b6bccf'},
                     text= [0.0692, 0.0764, 0.0933],
                     textposition='auto',
                     width=0.3,
@@ -163,7 +163,7 @@ def dashboard(request):
     trace1 = go.Bar(x = ['1000', '10000', '100000'], #parei a analise aqui
                     y = [0.0705, 0.0777, 0.092],
                     name = 'Windows 11',
-                    marker = {'color': '#b6bccf'},
+                    marker = {'color': '#68adfc'},
                     text= [0.0705, 0.0777, 0.092],
                     textposition='auto',
                     width=0.3,
@@ -172,7 +172,7 @@ def dashboard(request):
     trace2 = go.Bar(x = ['1000', '10000', '100000'],
                     y = [0.0653, 0.0578, 0.1036],
                     name = 'Ubuntu 22',
-                    marker = {'color': '#68adfc'},
+                    marker = {'color': '#b6bccf'},
                     text= [0.0653, 0.0578, 0.1036],
                     textposition='auto',
                     width=0.3,
@@ -210,23 +210,23 @@ def dashboard(request):
 
 
 
-    trace1 = go.Bar(x = ['1000', '10000', '100000'], #parei a analise aqui
+    trace1 = go.Bar(x = ['1000', '10000', '100000'], 
                     y = [24.9, 270.1, 1587.5],
                     name = 'Windows 11',
-                    marker = {'color': '#b6bccf'},
+                    marker = {'color': '#68adfc'},
                     text= [24.9, 270.1, 1587.5],
                     textposition='auto',
                     width=0.3,
                     error_y=dict(type='data', array=[4.764453210777755, 88.4641825655197, 50.73731730978261])
                     )
-    trace2 = go.Bar(x = ['1000', '10000', '100000'],#Falta o do Ubuntu
-                    y = [ 25, 207, 2092],
+    trace2 = go.Bar(x = ['1000', '10000', '100000'],
+                    y = [ 15, 79.5, 785.6],
                     name = 'Ubuntu 22',
-                    marker = {'color': '#68adfc'},
-                    text= [ 25, 207, 2092],
+                    marker = {'color': '#b6bccf'},
+                    text= [ 15, 79.5, 785.6],
                     textposition='auto',
                     width=0.3,
-                    error_y=dict(type='data', array=[9, 99, 89])
+                    error_y=dict(type='data', array=[0.7333648480432665, 2.513848046239153, 10.771800518296756])
                     )
     data = [trace1, trace2]
     figura = go.Figure(data=data)
@@ -239,7 +239,7 @@ def dashboard(request):
         )
 
     figura.update_layout(
-        title_text='Gráfico de Inserts no PostgresSQL',
+        title_text='Gráfico de Inserts no MySQL',
         height=500,
         xaxis_title="Valor da Carga",
         yaxis_title="Tempo em milissegundos",
@@ -258,20 +258,20 @@ def dashboard(request):
     trace1 = go.Bar(x = ['1000', '10000', '100000'],
                     y = [35.8, 259.4, 1570.3],
                     name = 'Windows 11',
-                    marker = {'color': '#b6bccf'},
+                    marker = {'color': '#68adfc'},
                     text= [35.8, 259.4, 1570.3],
                     textposition='auto',
                     width=0.3,
                     error_y=dict(type='data', array=[10.684427250009715, 90.97575997696596, 67.97163008151377])
                     )
-    trace2 = go.Bar(x = ['1000', '10000', '100000'], #Falta o do Ubuntu
-                    y = [ 35.8, 277, 2092],
+    trace2 = go.Bar(x = ['1000', '10000', '100000'], 
+                    y = [ 19.2, 71.6, 572.5],
                     name = 'Ubuntu 22',
-                    marker = {'color': '#68adfc'},
-                    text= [ 35.8, 277, 2092],
+                    marker = {'color': '#b6bccf'},
+                    text= [ 19.2, 71.6, 572.5],
                     textposition='auto',
                     width=0.3,
-                    error_y=dict(type='data', array=[9, 29, 89])
+                    error_y=dict(type='data', array=[2.4132686548826507, 5.894355808505288, 2.9497837210611406])
                     )
     data = [trace1, trace2]
     figura = go.Figure(data=data)
@@ -284,7 +284,7 @@ def dashboard(request):
         )
 
     figura.update_layout(
-        title_text='Gráfico de Update no PostgresSQL',
+        title_text='Gráfico de Update no MySQL',
         height=500,
         xaxis_title="Valor da Carga",
         yaxis_title="Tempo em milissegundos",
@@ -301,23 +301,23 @@ def dashboard(request):
 
     grafico6 = figura.to_html()
 
-    trace1 = go.Bar(x = ['1000', '10000', '100000'], #parei a analise aqui
-                    y = [2705, 2277, 22],
+    trace1 = go.Bar(x = ['1000', '10000', '100000'],
+                    y = [0, 0, 0],
                     name = 'Windows 11',
                     marker = {'color': '#68adfc'},
-                    text=  [2705, 2277, 22],
+                    text=  [0, 0, 0],
                     textposition='auto',
                     width=0.3,
-                    error_y=dict(type='data', array=[99, 2099, 889])
+                    error_y=dict(type='data', array=[0, 0, 0])
                     )
-    trace2 = go.Bar(x = ['1000', '10000', '100000'],#Falta o do Ubuntu
-                    y = [ 20705, 20777, 2092],
+    trace2 = go.Bar(x = ['1000', '10000', '100000'],#Falta o do Ubu ntu #parei a analise aqui
+                    y = [ 0, 0, 0],
                     name = 'Ubuntu 22',
                     marker = {'color': '#b6bccf'},
-                    text= [ 20705, 20777, 2092],
+                    text= [ 0, 0, 0],
                     textposition='auto',
                     width=0.3,
-                    error_y=dict(type='data', array=[99, 2099, 889])
+                    error_y=dict(type='data', array=[0, 0, 0])
                     )
     data = [trace1, trace2]
     figura = go.Figure(data=data)
@@ -329,7 +329,7 @@ def dashboard(request):
         )
 
     figura.update_layout(
-        title_text='Gráfico de Select no PostgresSQL',
+        title_text='Gráfico de Select no MySQL',
         height=500,
         xaxis_title="Valor da Carga",
         yaxis_title="Tempo em milissegundos",
@@ -355,14 +355,14 @@ def dashboard(request):
                     width=0.3,
                     error_y=dict(type='data', array=[2.8645519019344015, 44.984668768151586, 49.019165050341016])
                     )
-    trace2 = go.Bar(x = ['1000', '10000', '100000'],#Falta o do Ubuntu
-                    y = [ 25, 207, 1092],
+    trace2 = go.Bar(x = ['1000', '10000', '100000'],
+                    y = [ 7.1, 37.4, 333.3],
                     name = 'Ubuntu 22',
                     marker = {'color': '#b6bccf'},
-                    text= [ 25, 207, 1092],
+                    text= [ 7.1, 37.4, 333.3],
                     textposition='auto',
                     width=0.3,
-                    error_y=dict(type='data', array=[9, 29, 89])
+                    error_y=dict(type='data', array=[0.5700871512288421, 0.4958451371144019, 1.664269689423721])
                     )
     data = [trace1, trace2]
     figura = go.Figure(data=data)
@@ -374,7 +374,7 @@ def dashboard(request):
         )
 
     figura.update_layout(
-        title_text='Gráficos Comparativo entre Windonws 11 e Ubuntu 22.',
+        title_text='Gráfico de Delete no MySQL',
         height=500,
         xaxis_title="Valor da Carga",
         yaxis_title="Tempo em milissegundos",
@@ -390,26 +390,26 @@ def dashboard(request):
 
     grafico8 = figura.to_html()
 
-    trace1 = go.Bar(x = ['1000', '10000', '100000'],
-                    y = [17.2, 137.5, 910.9],
-                    name = 'Windows 11',
-                    marker = {'color': '#b6bccf'},
-                    text= [17.2, 137.5, 910.9],
-                    textposition='auto',
-                    width=0.3,
-                    error_y=dict(type='data', array=[2.8645519019344015, 44.984668768151586, 49.019165050341016])
-                    )
-    trace2 = go.Bar(x = ['1000', '10000', '100000'],#Falta o do Ubuntu
-                    y = [ 25, 207, 1092],
-                    name = 'Ubuntu 22',
-                    marker = {'color': '#68adfc'},
-                    text= [ 25, 207, 1092],
-                    textposition='auto',
-                    width=0.3,
-                    error_y=dict(type='data', array=[9, 29, 89])
-                    )
-    data = [trace1, trace2]
-    figura = go.Figure(data=data)
+    # trace1 = go.Bar(x = ['1000', '10000', '100000'],
+    #                 y = [17.2, 137.5, 9100000.9],
+    #                 name = 'Windows 11',
+    #                 marker = {'color': '#b6bccf'},
+    #                 text= [17.2, 137.5, 910.9],
+    #                 textposition='auto',
+    #                 width=0.3,
+    #                 error_y=dict(type='data', array=[2.8645519019344015, 44.984668768151586, 49.019165050341016])
+    #                 )
+    # trace2 = go.Bar(x = ['1000', '10000', '100000'],#Falta o do Ubuntu
+    #                 y = [ 25, 207, 1092],
+    #                 name = 'Ubuntu 22',
+    #                 marker = {'color': '#68adfc'},
+    #                 text= [ 25, 207, 1092],
+    #                 textposition='auto',
+    #                 width=0.3,
+    #                 error_y=dict(type='data', array=[9, 29, 89])
+    #                 )
+    # data = [trace1, trace2]
+    # figura = go.Figure(data=data)
 
     figura = make_subplots(rows=2, cols=2 , 
                             subplot_titles = ("Gráfico de Insert", 
@@ -419,6 +419,7 @@ def dashboard(request):
                             )
                         )
 
+    # INSERT postgres
     figura.append_trace(go.Bar(x = ['1000', '10000', '100000'],
                     y = [0.0887, 0.544, 1.0865],
                     name = 'Windows 11 VS Postgres',
@@ -438,44 +439,49 @@ def dashboard(request):
                     error_y=dict(type='data', array=[0.007738649910551172, 0.008672861580959234, 0.035113223583310406])),
                     row=1, col=1)
 
+    # INSERT Mysql
     figura.append_trace(go.Bar(x = ['1000', '10000', '100000'],
                     y = [24.9, 270.1, 1587.5],
                     name = 'Windows 11 VS Mysql',
                     marker = {'color': '#f7ec6f'},
-                    text=[0.0887, 0.544, 1.0865],
+                    text=[24.9, 270.1, 1587.5],
                     textposition='auto',
                     width=0.2,
                     error_y=dict(type='data', array=[4.764453210777755, 88.4641825655197, 50.73731730978261])),
                     row=1, col=1)
     figura.append_trace(go.Bar(x = ['1000', '10000', '100000'],
-                    y = [ 25, 207, 2092],
+                    y = [ 15, 79.5, 785.6],
                     name = 'Ubuntu 22 vs Mysql',
                     marker = {'color': '#e84925'},
-                    text=[0.0661, 0.253, 2.1656],
+                    text= [ 15, 79.5, 785.6],
                     textposition='auto',
                     width=0.2,
-                    error_y=dict(type='data', array=[9, 99, 89])),
+                    error_y=dict(type='data', array=[0.7333648480432665, 2.513848046239153, 10.771800518296756])),
                     row=1, col=1)
                     
+# ========================================================================================
 
+    # update postgres
     figura.append_trace(go.Bar(x = ['1000', '10000', '100000'],
-                    y = [0.0887, 0.544, 1.0865],
+                    y = [0.079, 0.0867, 0.1554],
                     name = 'Windows 11 VS Postgres',
                     marker = {'color': '#b6bccf'},
-                    text=[0.0887, 0.544, 1.0865],
+                    text=[0.079, 0.0867, 0.1554],
                     textposition='auto',
                     width=0.2,
-                    error_y=dict(type='data', array=[0.0049433205036927864, 0.02915989958525339, 0.040226582751884815])),
+                    error_y=dict(type='data', array=[0.012114005120714243, 0.010749845096837558, 0.01669386205687868])),
                     row=1, col=2)
     figura.append_trace(go.Bar(x = ['1000', '10000', '100000'],
-                    y = [0.0661, 0.253, 2.1656],
+                    y =[0.0584, 0.0702, 0.3249],
                     name = 'Ubuntu 22 VS Postgres',
                     marker = {'color': '#68adfc'},
-                    text=[0.0661, 0.253, 2.1656],
+                    text=[0.0584, 0.0702, 0.3249],
                     textposition='auto',
                     width=0.2,
-                    error_y=dict(type='data', array=[0.007738649910551172, 0.008672861580959234, 0.035113223583310406])),
+                    error_y=dict(type='data', array=[0.006074102929651422, 0.008089839158348239, 0.011725486016817912])),
                     row=1, col=2)
+
+    # update Mysql
     figura.append_trace(go.Bar(x = ['1000', '10000', '100000'],
                     y = [0.0887, 0.544, 1.0865],
                     name = 'Windows 11 VS Mysql',
@@ -496,25 +502,30 @@ def dashboard(request):
                     row=1, col=2)
                     
 
+# ========================================================================================
+
+    # select postgres
     figura.append_trace(go.Bar(x = ['1000', '10000', '100000'],
-                    y = [0.0887, 0.544, 1.0865],
+                    y =  [0.1127, 0.0963, 0.1087],
                     name = 'Windows 11 VS Postgres',
                     marker = {'color': '#b6bccf'},
-                    text=[0.0887, 0.544, 1.0865],
+                    text= [0.1127, 0.0963, 0.1087],
                     textposition='auto',
                     width=0.2,
-                    error_y=dict(type='data', array=[0.0049433205036927864, 0.02915989958525339, 0.040226582751884815])),
+                    error_y=dict(type='data', array=[0.018269155692079184, 0.010746270871543439, 0.024702299199191965])),
                     row=2, col=1)
 
     figura.append_trace(go.Bar(x = ['1000', '10000', '100000'],
-                    y = [0.0661, 0.253, 2.1656],
+                    y =  [0.0692, 0.0764, 0.0933],
                     name = 'Ubuntu 22 VS Postgres',
                     marker = {'color': '#68adfc'},
-                    text=[0.0661, 0.253, 2.1656],
+                    text= [0.0692, 0.0764, 0.0933],
                     textposition='auto',
                     width=0.2,
-                    error_y=dict(type='data', array=[0.007738649910551172, 0.008672861580959234, 0.035113223583310406])),
+                    error_y=dict(type='data', array=[0.0033812130368940066, 0.006693909351044425, 0.003969181477559334])),
                     row=2, col=1)
+
+    # select mysql
     figura.append_trace(go.Bar(x = ['1000', '10000', '100000'],
                     y = [0.0887, 0.544, 1.0865],
                     name = 'Windows 11 VS Mysql',
@@ -535,24 +546,29 @@ def dashboard(request):
                     row=2, col=1)
                     
 
+# ========================================================================================
+
+    # delete postgres
     figura.append_trace(go.Bar(x = ['1000', '10000', '100000'],
-                    y = [0.0887, 0.544, 1.0865],
+                    y = [0.0705, 0.0777, 0.092],
                     name = 'Windows 11 VS Postgres',
                     marker = {'color': '#b6bccf'},
-                    text=[0.0887, 0.544, 1.0865],
+                    text=[0.0705, 0.0777, 0.092],
                     textposition='auto',
                     width=0.2,
-                    error_y=dict(type='data', array=[0.0049433205036927864, 0.02915989958525339, 0.040226582751884815])),
+                    error_y=dict(type='data', array=[0.008435972973663405, 0.00924758658063027, 0.013018885970755612])),
                     row=2, col=2)
     figura.append_trace(go.Bar(x = ['1000', '10000', '100000'],
-                    y = [0.0661, 0.253, 2.1656],
+                    y = [0.0653, 0.0578, 0.1036],
                     name = 'Ubuntu 22 VS Postgres',
                     marker = {'color': '#68adfc'},
-                    text=[0.0661, 0.253, 2.1656],
+                    text=[0.0653, 0.0578, 0.1036],
                     textposition='auto',
                     width=0.2,
-                    error_y=dict(type='data', array=[0.007738649910551172, 0.008672861580959234, 0.035113223583310406])),
+                    error_y=dict(type='data', array=[0.0063996326130711855, 0.005206373939701219, 0.0072609998231393125])),
                     row=2, col=2)
+
+    # delete mysql
     figura.append_trace(go.Bar(x = ['1000', '10000', '100000'],
                     y = [0.0887, 0.544, 1.0865],
                     name = 'Windows 11 VS Mysql',
